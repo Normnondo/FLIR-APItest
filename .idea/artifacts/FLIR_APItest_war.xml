@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FLIR-APItest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>FLIR-APItest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="flirAPItest.war">
+      <element id="artifact" artifact-name="FLIR-APItest:war exploded" />
+    </root>
+  </artifact>
+</component>
