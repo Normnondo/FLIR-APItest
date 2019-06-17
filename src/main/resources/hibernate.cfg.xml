@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql:///flirAPItest</property>
+        <property name="connection.url">jdbc:mysql:///flirapitest</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 
         <property name="connection.username">Norm</property>
@@ -16,9 +16,8 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
-        <mapping class="com.normnondo.controller.xxx"/>
-       <!-- <mapping class="com.normnondo.entity.BeaconGames"/>
-        <mapping class="com.normnondo.entity.BeaconRole"/> -->
+        <mapping class="com.normnondo.controller.LangClass"/>
+        <mapping class="com.normnondo.controller.SmithClass"/>
         <!-- add another 'mapping class' for each table you add -->
 
     </session-factory>
