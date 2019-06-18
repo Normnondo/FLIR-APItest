@@ -1,6 +1,7 @@
 package com.normnondo.controller;
 
-import com.normnondo.persistence.RegisterDao;
+import com.normnondo.RegisterDao;
+import com.normnondo.entity.Smith;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,7 +19,7 @@ public class SmithConfirm {
 
     @Produces(MediaType.APPLICATION_JSON)
     public Response getSmithClass(@PathParam("param") String smithParam) {
-        List<SmithClass> output = new RegisterDao(SmithClass.class).getByEmail(smithParam);
+        List<Smith> output = new RegisterDao(Smith.class).getByEmail(smithParam);
         return Response.status(200).entity(output).build();
     }
 

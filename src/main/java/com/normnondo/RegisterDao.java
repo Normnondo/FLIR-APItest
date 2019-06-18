@@ -1,4 +1,4 @@
-package com.normnondo.persistence;
+package com.normnondo;
 
 import java.util.List;
 

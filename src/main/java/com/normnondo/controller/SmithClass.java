@@ -1,7 +1,7 @@
 package com.normnondo.controller;
 
 import com.normnondo.entity.Smith;
-import com.normnondo.persistence.RegisterDao;
+import com.normnondo.RegisterDao;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;

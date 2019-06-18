@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 
-@Entity(name = "flirAPItest")
+@Entity(name = "LangClass")
 @Table(name = "class_lang")
 public class Lang {
 

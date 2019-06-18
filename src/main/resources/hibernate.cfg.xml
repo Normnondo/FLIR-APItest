@@ -16,8 +16,8 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
-        <mapping class="com.normnondo.controller.LangClass"/>
-        <mapping class="com.normnondo.controller.SmithClass"/>
+        <mapping class="com.normnondo.entity.Lang"/>
+        <mapping class="com.normnondo.entity.Smith"/>
         <!-- add another 'mapping class' for each table you add -->
 
     </session-factory>

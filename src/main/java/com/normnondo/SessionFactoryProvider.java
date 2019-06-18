@@ -1,4 +1,4 @@
-package com.normnondo.persistence;
+package com.normnondo;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

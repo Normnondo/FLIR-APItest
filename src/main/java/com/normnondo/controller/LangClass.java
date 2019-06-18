@@ -1,7 +1,7 @@
 package com.normnondo.controller;
 
 import com.normnondo.entity.Lang;
-import com.normnondo.persistence.RegisterDao;
+import com.normnondo.RegisterDao;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -21,6 +21,9 @@ public class LangClass {
         String email = langParam3;
         Lang lang = new Lang(firstName, lastName, email);
         int id = registerDao.insert(lang);
+        if (id > 0) {
+            System.out.println("Success");
+        }
     }
 
 }

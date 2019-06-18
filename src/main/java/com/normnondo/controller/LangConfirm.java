@@ -1,6 +1,7 @@
 package com.normnondo.controller;
 
-import com.normnondo.persistence.RegisterDao;
+import com.normnondo.RegisterDao;
+import com.normnondo.entity.Lang;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,7 +19,7 @@ public class LangConfirm {
 
     @Produces(MediaType.APPLICATION_JSON)
     public Response getLangClass(@PathParam("param") String langParam) {
-        List<LangClass> output = new RegisterDao(LangClass.class).getByEmail(langParam);
+        List<Lang> output = new RegisterDao(Lang.class).getByEmail(langParam);
         return Response.status(200).entity(output).build();
     }
 
